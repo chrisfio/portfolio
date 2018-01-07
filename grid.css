@@ -17,7 +17,7 @@
 }
 
 html {
-	height: 100vh;
+	
 }
 
 body {
@@ -25,11 +25,29 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
+h1 {
+	margin: 0;
+}
+
+.header {
+	position: relative;
+}
+
+.header h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.footer p {
+	margin: 0;
+}
+
 .wrapper {
 	display: grid;
 	grid-template-columns: 4fr 1fr 4fr 4fr 4fr 1fr;
 	background: #dedede;
-	height: 100vh;
 }
 
 .side-top img {
@@ -43,7 +61,9 @@ body {
 
 .projects {
 	display: grid;
-	grid-template-rows: 1fr 3fr 3fr 1fr;
+	grid-template-rows: 2fr 9fr 9fr 1fr;
+	height: 100vh;
+	min-height: 600px;
 }
 
 .projects > div:nth-child(odd) {
@@ -114,9 +134,11 @@ body {
 }
 
 .front .top-img {
-	height: 70%;
-	background: blue;
-	border-radius: 3px;
+	height: 85%;
+	border-radius: 3px 3px 0px 0px;
+	background-size: cover;
+	background-position: top; 
+	position: relative;
 }
 
 .front, .back {
@@ -135,4 +157,69 @@ body {
 .back {
 	transform: rotateY(180deg);
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.front .bartender-at-home:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #52a8f5, rgba(181,181,181,0.9));
+	left: 0;
+}
+
+.card-top-section {
+	position: relative;
+	height: 60%; 
+	overflow: hidden;
+	backface-visibility: hidden;
+}
+
+.card-top-section p {
+	font-size: 1.5vw;
+}
+
+.card-top-circle {
+	position: absolute;
+	width: 35%;
+	background: #dedede;
+	background-image: url('images/drink.png');
+ 	background-size: cover;
+    background-position: top;
+	border-radius: 50%; 
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cf5a5e;
+	top: 45%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	backface-visibility: hidden;
+}
+
+.card-top-circle:after {
+	content: '';
+	padding-bottom: 100%;
+	display: flex;
+}
+
+.card-front-title {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	backface-visibility: hidden;
+}
+
+.card-bottom-section {
+	font-size: 1vw;
+	position: relative;
+	height: 40%;
+	backface-visibility: hidden;
+}
+
+.card-bottom-section p {
+	position: absolute;
+	top: 5%;
+	padding: 8%;
+	font-size: 1vw; 
+	font-family: 'Open Sans', sans-serif;
 }
