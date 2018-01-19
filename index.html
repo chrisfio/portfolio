@@ -25,10 +25,10 @@
 			<div class="side-bottom">	
 				<p class="contact-me">Contact Me</p>
 				<div class="contact-fonts">
-					<i class="fa fa-linkedin" aria-hidden="true"></i>
-					<i class="fa fa-envelope" aria-hidden="true"></i>
-					<i class="fa fa-phone" aria-hidden="true"></i>
-					<i class="fa fa-home" aria-hidden="true"></i>
+					<a class="sidebar-link" target="_blank" href="https://www.linkedin.com/in/christopher-fiorino-79846822/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					<a class="sidebar-link" href="mailto:chris.fiorino@gmail.com?subject=Let's%20setup%20a%20call%20ASAP&body=Hi%20Chris,%20Let%20us%20know%20when%20you%20are%20free%20to%20chat!"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+					<a class="sidebar-link" href="tel:+14439042141"><i class="fa fa-phone" aria-hidden="true"></i></a>
+					<a class="sidebar-link" target="_blank" href="https://www.google.com/maps/place/965+E+El+Camino+Real,+Sunnyvale,+CA+94087/@37.3533409,-122.0131677,17z/data=!3m1!4b1!4m5!3m4!1s0x808fb5e673af75e1:0x22ece3e244ac4032!8m2!3d37.3533409!4d-122.010979"><i class="fa fa-home" aria-hidden="true"></i></a>
 				</div>
 			</div>
 		</div>
@@ -36,10 +36,10 @@
 		<div class="projects projects-col1">
 			<div class="header"></div>
 			<div class="project-card-wrapper">
-				<div class="project-card">
+				<div class="project-card card-one">
 					<div class="front">
 						<div class="card-top-section">
-							<div class="card-top-circle"></div>
+							<div class="card-top-circle bartender-app-icon"></div>
 							<div class="card-front-title">
 								<p>Bartender At Home</p>
 							</div>
@@ -49,20 +49,59 @@
 						</div>
 					</div>
 					<div class="back">
-						<p>Card One Back</p>
+						<div class="card-back-title"><p class="card-back-header">Bartender At Home</p></div>
+						<div class="card-back-description"><p>Built to demonstrate ability to build a full stack application, this is a Flask based CRUD web app hosted on an AWS Ubuntu machine using Apache with PosgreSQL. Layout built using CSS grid, login with OAuth2.0, and secured by Let's Encrypt</p></div>
+						<div class="card-back-skills-row">
+							<p class="skill-box">Flask</p>
+							<p class="skill-box">PosgreSQL</p>
+							<p class="skill-box">Apache</p>
+							<p class="skill-box">OAuth2.0</p>
+						</div>
+						<div class="card-back-skills-row">
+							<p class="skill-box">JSON</p>
+							<p class="skill-box">Python</p>
+							<p class="skill-box">AWS</p>
+							<p class="skill-box">CSS Grid</p>
+						</div>
+						<div class="card-back-bottom">
+							<a class="git-link" target="_blank" href="https://github.com/chrisfio/flask-crud-vagrantvm"><i class="fa fa-github" aria-hidden="true"></i><i class="fa fa-git" aria-hidden="true"></i></a>
+							<a class="project-link" target="_blank" href="http://bartenderapp.chrisfiorino.com"><p class="project-link-button">Project Page</p></a>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="project-card-wrapper">
-				<div class="project-card">
+				<div class="project-card card-four">
 					<div class="front">
-						<div class="card-title"><p>Bartender At Home</p></div>
-						<div class="card-description"><p>This app was created to better understand This app was created to better understand This app was created to better understand This app was created to better understand </p></div>
-						<div class="card-icons-holder"></div>
-						<div class="card-project-links"></div>
+						<div class="card-top-section">
+							<div class="card-top-circle database-icon"></div>
+							<div class="card-front-title">
+								<p>SQL Project</p>
+							</div>
+						</div>
+						<div class="card-bottom-section">
+							<p>Program designed to analyse SQL data using Vagrant VM and PostgreSQL</p>
+						</div>
 					</div>
 					<div class="back">
-						<p>Card Four Back</p>
+						<div class="card-back-title"><p class="card-back-header">SQL Project</p></div>
+						<div class="card-back-description"><p>A spirit and cocktail recipe catalog. Users can login using OAuth2.0 to contribute to the database. A spirit and cocktail recipe catalog. Users can login using OAuth2.0 to contribute to the database.</p></div>
+						<div class="card-back-skills-row">
+							<p class="skill-box">SQL</p>
+							<p class="skill-box">Vagrant</p>
+							<p class="skill-box">Apache</p>
+							<p class="skill-box">OAuth</p>
+						</div>
+						<div class="card-back-skills-row">
+							<p class="skill-box">JSON</p>
+							<p class="skill-box">Python</p>
+							<p class="skill-box">AWS</p>
+							<p class="skill-box">CSS Grid</p>
+						</div>
+						<div class="card-back-bottom">
+							<a class="git-link" href="https://google.com/"><i class="fa fa-github" aria-hidden="true"></i><i class="fa fa-git" aria-hidden="true"></i></a>
+							<a class="project-link" href="https://github.com/chrisfio/"><p class="project-link-button">Project Page</p></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -71,25 +110,70 @@
 		<div class="projects projects-col2">
 			<div class="header"><h1 class="projects-header">Projects</h1></div>
 			<div class="project-card-wrapper">
-				<div class="project-card">
+				<div class="project-card card-two">
 					<div class="front">
-						<div class="top-img bartender-at-home" style="background-image: url(images/bartenderAtHome.png)"></div>
-						<div class="bottom-text">
-							<p>Card Two Front</p>
+						<div class="card-top-section">
+							<div class="card-top-circle phone-app-icon"></div>
+							<div class="card-front-title">
+								<p>iOS/Android App</p>
+							</div>
+						</div>
+						<div class="card-bottom-section">
+							<p>An application to help user clean up their public record. Build for RecordFixer.com</p>
 						</div>
 					</div>
 					<div class="back">
-						<p>Card Two Back</p>
+						<div class="card-back-title"><p class="card-back-header">iOS/Android App</p></div>
+						<div class="card-back-description"><p>Built iOS and Android apps for RecordFixer.com through AnalytixBar. The application was built with JavaScript using Appcelerator Titanium. The backend is hosted on an AWS EC2 Ubuntu server built on a Django framework with PosgreSQL.</p></div>
+						<div class="card-back-skills-row">
+							<p class="skill-box">Django</p>
+							<p class="skill-box">JavaScript</p>
+							<p class="skill-box">PosgreSQL</p>
+						</div>
+						<div class="card-back-skills-row">
+							<p class="skill-box">JSON</p>
+							<p class="skill-box">Python</p>
+							<p class="skill-box">AWS</p>
+							<p class="skill-box">EC2</p>
+						</div>
+						<div class="card-back-bottom">
+							<p class="card-back-bottom-note">Source code private - App Store ETA Feb '18</p>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="project-card-wrapper">
-				<div class="project-card">
+				<div class="project-card card-five">
 					<div class="front">
-						<p>Card Five Front</p>
+						<div class="card-top-section">
+							<div class="card-top-circle css-icon"></div>
+							<div class="card-front-title">
+								<p>Sciforma CSS Styling</p>
+							</div>
+						</div>
+						<div class="card-bottom-section">
+							<p>Sciforma builds project management software. I styled many of their pages based on designer mocks.</p>
+						</div>
 					</div>
 					<div class="back">
-						<p>Card Five Back</p>
+						<div class="card-back-title"><p class="card-back-header">Bartender At Home</p></div>
+						<div class="card-back-description"><p>A spirit and cocktail recipe catalog. Users can login using OAuth2.0 to contribute to the database. A spirit and cocktail recipe catalog. Users can login using OAuth2.0 to contribute to the database.</p></div>
+						<div class="card-back-skills-row">
+							<p class="skill-box">AJAX</p>
+							<p class="skill-box">Python</p>
+							<p class="skill-box">HTML</p>
+							<p class="skill-box">CSS</p>
+						</div>
+						<div class="card-back-skills-row">
+							<p class="skill-box">SQL Alchemy</p>
+							<p class="skill-box">OAuth</p>
+							<p class="skill-box">Flask</p>
+							<p class="skill-box">JSON</p>
+						</div>
+						<div class="card-back-bottom">
+							<a class="git-link" target="_blank" href="https://google.com/"><i class="fa fa-github" aria-hidden="true"></i><i class="fa fa-git" aria-hidden="true"></i></a>
+							<a class="project-link" target="_blank" href="https://github.com/chrisfio/"><p class="project-link-button">Project Page</p></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -99,22 +183,70 @@
 		<div class="projects projects-col3">
 			<div class="header"></div>
 			<div class="project-card-wrapper">
-				<div class="project-card">
+				<div class="project-card card-three">
 					<div class="front">
-						<p>Card Three Front</p>
+						<div class="card-top-section">
+							<div class="card-top-circle verbalize-icon"></div>
+							<div class="card-front-title">
+								<p>Verbal Unit Converter</p>
+							</div>
+						</div>
+						<div class="card-bottom-section">
+							<p>Convert units to terms your audience will understand. I built this project for AnalytixBar.</p>
+						</div>
 					</div>
 					<div class="back">
-						<p>Card Three Back</p>
+						<div class="card-back-title"><p class="card-back-header">Verbal Unit Converter</p></div>
+						<div class="card-back-description"><p>Built to allow a user to convert a unit of measurement into relative terms. Built with JavaScript and JSON by determining a base unit of measurement and relative base factor for every available unit of measurement.</p></div>
+						<div class="card-back-skills-row">
+							<p class="skill-box">JavaScript</p>
+							<p class="skill-box">JSON</p>
+							<p class="skill-box">Git</p>
+						</div>
+						<div class="card-back-skills-row">
+							<p class="skill-box">HTML</p>
+							<p class="skill-box">CSS</p>
+							<p class="skill-box">BitBucket</p>
+						</div>
+						<div class="card-back-bottom">
+							<a class="git-link" target="_blank" href="https://analytixbar.com/scripts/verbalizeLogic.js"><i class="fa fa-code" aria-hidden="true"></i></a>
+							<a class="project-link" target="_blank" href="https://analytixbar.com/verbalize.html"><p class="project-link-button">Project Page</p></a>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="project-card-wrapper">
-				<div class="project-card">
+				<div class="project-card card-six">
 					<div class="front">
-						<p>Card Six Front</p>
+						<div class="card-top-section">
+							<div class="card-top-circle website-icon"></div>
+							<div class="card-front-title">
+								<p>Personal Website</p>
+							</div>
+						</div>
+						<div class="card-bottom-section">
+							<p>An early website build from scratch to host my story and resume.</p>
+						</div>
 					</div>
 					<div class="back">
-						<p>Card Six Back</p>
+						<div class="card-back-title"><p class="card-back-header">Personal Website</p></div>
+						<div class="card-back-description"><p>A spirit and cocktail recipe catalog. Users can login using OAuth2.0 to contribute to the database. A spirit and cocktail recipe catalog. Users can login using OAuth2.0 to contribute to the database.</p></div>
+						<div class="card-back-skills-row">
+							<p class="skill-box">AJAX</p>
+							<p class="skill-box">Python</p>
+							<p class="skill-box">HTML</p>
+							<p class="skill-box">CSS</p>
+						</div>
+						<div class="card-back-skills-row">
+							<p class="skill-box">SQL Alchemy</p>
+							<p class="skill-box">OAuth</p>
+							<p class="skill-box">Flask</p>
+							<p class="skill-box">JSON</p>
+						</div>
+						<div class="card-back-bottom">
+							<a class="git-link" href="https://google.com/"><i class="fa fa-github" aria-hidden="true"></i><i class="fa fa-git" aria-hidden="true"></i></a>
+							<a class="project-link" href="https://github.com/chrisfio/"><p class="project-link-button">Project Page</p></a>
+						</div>
 					</div>
 				</div>
 			</div>
