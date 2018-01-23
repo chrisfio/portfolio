@@ -58,6 +58,7 @@ h1, h2 {
 .sidebar {
 	display: grid;
 	grid-template-rows: 2fr 2fr 1fr 1fr;
+	height: 100vh;
 }
 
 .sidebar-link {
@@ -90,7 +91,7 @@ h1, h2 {
 
 .side-top img {
 	border-radius: 50%;
-	max-height: 85%;
+	width: 65%;
 }
 
 .contact-fonts{
