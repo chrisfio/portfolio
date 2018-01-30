@@ -142,10 +142,6 @@ h1, h2 {
 	position: relative;
 }
 
-.project-card:hover {
-	transform: rotateY(180deg);
-}
-
 .front .top-img {
 	height: 85%;
 	border-radius: 3px 3px 0px 0px;
@@ -164,11 +160,9 @@ h1, h2 {
 	background: #FDFDFE;
 	border-radius: 3px;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .back {
-	transform: rotateY(180deg);
 	-webkit-transform: rotateY(180deg) translateZ(1px);
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
