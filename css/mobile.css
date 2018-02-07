@@ -1,0 +1,158 @@
+
+/* Mobile Styling for website */
+
+body {
+	margin: 0;
+}
+
+.mobile-menu-section {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 50;
+	background: #68C2AC;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 2rem;
+	box-sizing: border-box;
+	color: #FDFDFE;
+	min-height: 10vh;
+}
+
+.mobile-menu-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.navbar-toggle-button {
+	position: relative;
+	font-size: 4.5vmax;
+    text-transform: uppercase;
+    color: white;
+    line-height: 1;
+    background: 0 0;
+    border: 2px solid transparent;
+    border-radius: .25rem;
+    padding: 10px 20px;
+    border-color: #FDFDFE;
+}
+
+.fa-bars {
+	color: #FDFDFE;
+	font-size: inherit;
+}
+
+.collapse {
+	display: none;
+}
+
+.navbar-initials {
+	color: #FDFDFE;
+	display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 4vh;
+    line-height: inherit;
+	white-space: nowrap;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    text-decoration: none; 
+}
+
+.intro-aboutme {
+	background: #CFD6DE;
+    height: 100vh;
+}
+
+
+
+.profile-container {
+	vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    height: 50%;
+    width: 100%;
+    padding-top: 25%;
+}
+
+.profile-pic {
+	border-radius: 50%;
+    width: 55%;
+    height: auto;
+    border: .75rem solid rgba(255, 255, 255, 0.75);
+}
+
+.about-name {
+	display: block;
+	font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 5.5vh;
+    padding: 10% 0 2% 0;
+    text-shadow: 0px 4px 8px rgba(0,0,0,0.35);
+    letter-spacing: 1px;
+}
+
+.about-line {
+	border-color: #FFFFFF;
+    max-width: 40%;
+    color: #FFFFFF;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    border: none;
+    border-top: solid 6px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.25);
+}
+
+.about-title {
+	display: block;
+	font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+    font-size: 3vh;
+    padding: 2% 0;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.35);
+    letter-spacing: 1px;
+}
+
+.about-body {
+	vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding-top: 25%;
+    text-decoration: none;
+}
+
+.about-projects-title {
+	display: block;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+    color: #FFFFFF;
+    font-size: 3vh;
+    padding: 2% 0;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.35);
+    letter-spacing: 1px;
+}
+
+.fa-chevron-down {
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
+	font-size: 5vh;
+	padding: 0;
+	text-shadow: 0px 2px 4px rgba(0,0,0,0.35);
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}

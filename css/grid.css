@@ -208,23 +208,23 @@ h1, h2 {
 }
 
 .phone-app-icon {
-	background-image: url('images/phone.png');
+	background-image: url('../images/phone.png');
 }
 
 .verbalize-icon {
-	background-image: url('images/verbalize.png');
+	background-image: url('../images/verbalize.png');
 }
 
 .database-icon {
-	background-image: url('images/database.png');
+	background-image: url('../images/database.png');
 }
 
 .css-icon {
-	background-image: url('images/css.png');
+	background-image: url('../images/css.png');
 }
 
 .website-icon {
-	background-image: url('images/website.png');
+	background-image: url('../images/website.png');
 }
 
 .card-top-circle:after {
