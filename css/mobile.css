@@ -20,7 +20,7 @@ body {
 	padding: 1rem 2rem;
 	box-sizing: border-box;
 	color: #FDFDFE;
-	min-height: 10vh;
+	min-height: 150px;
 }
 
 .mobile-menu-container {
@@ -49,8 +49,8 @@ body {
 	font-size: inherit;
 }
 
-.collapse {
-	display: none;
+.fa-times {
+    padding: 0px .18vw
 }
 
 .navbar-initials {
@@ -59,7 +59,7 @@ body {
     padding-top: .3125rem;
     padding-bottom: .3125rem;
     margin-right: 1rem;
-    font-size: 4vh;
+    font-size: 7vw;
     line-height: inherit;
 	white-space: nowrap;
     font-family: 'Lato', sans-serif;
@@ -67,12 +67,49 @@ body {
     text-decoration: none; 
 }
 
-.intro-aboutme {
-	background: #CFD6DE;
-    height: 100vh;
+.mobile-navbar {
+    position: absolute;
+    background: #68C2AC;
+    top: 100%;
+    width: 100%;
+    right: 0;
+    -webkit-clip-path: circle(0px at top right);
+    clip-path: circle(0px at top right); 
+    -webkit-transition: all ease-in-out 600ms;
+    transition: all ease-in-out 600ms;
+}
+
+.mobile-navbar-open {
+    clip-path: circle(100%);
 }
 
 
+.mobile-navbar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mobile-navbar li{
+    font-size: 5vw;
+    border-top: 1px solid white;
+    padding: 20px 4vw 20px 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    text-align: right;
+}
+
+.mobile-navbar a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}    
+
+.intro-aboutme {
+	background: #CFD6DE;
+    height: 93vh;
+    padding-top: 15vw;
+}
 
 .profile-container {
 	vertical-align: top;
@@ -95,7 +132,7 @@ body {
 	font-family: 'Lato', sans-serif;
     font-weight: bold;
     color: #FFFFFF;
-    font-size: 5.5vh;
+    font-size: 10.5vw;
     padding: 10% 0 2% 0;
     text-shadow: 0px 4px 8px rgba(0,0,0,0.35);
     letter-spacing: 1px;
@@ -117,7 +154,7 @@ body {
 	display: block;
 	font-family: 'Lato', sans-serif;
     color: #FFFFFF;
-    font-size: 3vh;
+    font-size: 6vw;
     padding: 2% 0;
     text-shadow: 0px 2px 4px rgba(0,0,0,0.35);
     letter-spacing: 1px;
@@ -134,20 +171,19 @@ body {
 
 .about-projects-title {
 	display: block;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
     color: #FFFFFF;
-    font-size: 3vh;
+    font-size: 5.5vw;
     padding: 2% 0;
     text-shadow: 0px 2px 4px rgba(0,0,0,0.35);
-    letter-spacing: 1px;
 }
 
 .fa-chevron-down {
 	color: #FFFFFF;
 	text-decoration: none;
 	display: block;
-	font-size: 5vh;
+	font-size: 10vw;
 	padding: 0;
 	text-shadow: 0px 2px 4px rgba(0,0,0,0.35);
 	text-align: center;
@@ -155,4 +191,234 @@ body {
 
 a {
 	text-decoration: none;
+}
+
+.projects {
+    padding-top: 150px;
+    margin-top: -150px;
+}
+
+.project-card {
+    margin: 8% 4%;
+    background-color: #CFD6DE;
+    text-align: center;
+}
+
+.project-card-top {
+    position: relative;
+    height: 55vw;
+    overflow: hidden;
+}
+
+.title-header {
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+    font-weight: bold; 
+    font-size: 7vw;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.35);
+    text-align: center;
+    padding: 8% 0 2% 0;
+    margin: 0;
+}
+    
+.project-top-circle {
+    position: absolute;
+    background: #FDFDFE;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: top;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #67c3ac;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-top-cirlce:after {
+    content: '';
+    padding-bottom: 100%;
+    display: flex;
+}
+
+.bartender-app-icon {
+    background-image: url('../images/drink.png');
+}
+
+.phone-app-icon {
+    background-image: url('../images/phone.png');
+}
+
+.verbalize-icon {
+    background-image: url('../images/verbalize.png');
+}
+
+.database-icon {
+    background-image: url('../images/database.png');
+}
+
+.css-icon {
+    background-image: url('../images/css.png');
+}
+
+.website-icon {
+    background-image: url('../images/website.png');
+}
+
+.project-card-bottom {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-description {
+    padding: 0 7%;
+    font-size: 3vw;
+    font-family: 'Open Sans', sans-serif;
+    color: #586880;
+}
+
+.project-description p {
+    margin-bottom: 40px;
+}
+
+.skill-box {
+    border-style: solid;
+    border-radius: 4%;
+    border-color: #68C2AC;
+    background: #68C2AC;
+    border-width: 1px;
+    display: inline-flex;
+    font-size: 4vw;
+    font-family: 'Open Sans', sans-serif;
+    color: #FDFDFE;
+    font-weight: lighter;
+    padding: 0 2% 0 2%;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+    margin: 8px 1px;
+}
+
+.skills-row-two {
+    margin-bottom: 30px;
+}
+
+.project-links-bottom {
+    position: relative;
+    height: 13vw;
+    font-size: 6vw;
+}
+
+.project-links-bottom .git-link {
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+    text-shadow: 4px 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.project-links-bottom a {
+    text-decoration: none;
+    color: #68C2AC;
+    margin: 0;
+}
+
+.fa-github {
+    padding-top: 3%;
+}
+
+.project-links-bottom .project-link {
+    position: absolute;
+    right: 10%;
+    bottom: 30%;
+    font-size: 4vw;
+    background: #FDFDFE;
+    font-weight: bold;
+    border-radius: 45px;
+    border: 1px solid #68C2AC;
+    padding: 2px 10px 2px 10px;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.25);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.project-links-bottom .project-link-left p {
+    margin: 7px 10px;
+}
+
+.project-links-bottom .project-link-left {
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+    font-size: 4vw;
+    background: #FDFDFE;
+    font-weight: bold;
+    border-radius: 45px;
+    border: 1px solid #68C2AC;
+    padding: 2px 10px 2px 10px;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.25);
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.project-links-bottom .project-link p {
+    margin: 7px 10px;
+}
+
+.outro-contactme {
+    background: #CFD6DE;
+    height: 100vh;
+}
+
+.contact-container {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    height: 10%;
+    width: 100%;
+    padding-top: 15%;
+}
+
+.contact-title {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 10vw;
+    padding: 10% 0 2% 0;
+    text-shadow: 0px 4px 8px rgba(0,0,0,0.35);
+    letter-spacing: 1px;
+}
+
+.contact-line {
+    border-color: #FFFFFF;
+    max-width: 40%;
+    color: #FFFFFF;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    border: none;
+    border-top: solid 6px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.25);
+}
+
+.contact-body {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding-top: 25%;
+    text-decoration: none;
+}
+
+.contact-body p {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+    font-size: 7vw;
+    padding: 2% 0;
+    text-shadow: 2px 4px 8px rgba(0,0,0,0.45);
+    letter-spacing: 0px;
+    margin: 0;
 }
