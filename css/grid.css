@@ -4,8 +4,6 @@
   grid-column-gap: 1em;
   grid-row-gap: 1em;
   */
-
-  
 }
 
 .wrapper > div:nth-child(odd) {
@@ -206,27 +204,27 @@ h1, h2 {
 }
 
 .bartender-app-icon {
-	background-image: url('images/drink.png');
+	background-image: url('../images/drink.png');
 }
 
 .phone-app-icon {
-	background-image: url('images/phone.png');
+	background-image: url('../images/phone.png');
 }
 
 .verbalize-icon {
-	background-image: url('images/verbalize.png');
+	background-image: url('../images/verbalize.png');
 }
 
 .database-icon {
-	background-image: url('images/database.png');
+	background-image: url('../images/database.png');
 }
 
 .css-icon {
-	background-image: url('images/css.png');
+	background-image: url('../images/css.png');
 }
 
 .website-icon {
-	background-image: url('images/website.png');
+	background-image: url('../images/website.png');
 }
 
 .card-top-circle:after {
@@ -405,10 +403,48 @@ h1, h2 {
 }
 
 .github-icon {
-
 }
 
 .project-link-button {
-
 }
 
+.mobile-menu {
+	display: none; 
+}
+
+@media only screen 
+  and (max-device-width: 480px) {
+
+  	.wrapper > .sidebar {
+  		position: absolute;
+  		height: 10%;
+  		width: 100%; 
+  		background-color: #68C2AC;
+  	}
+
+  	.mobile-menu {
+  		display: block;
+  	}
+
+  	.wrapper > .sidebar > .mobile-menu > img{
+  		position: absolute;
+  		height: 10%;
+  		width: auto; 
+  		background-color: #68C2AC;
+  	}
+
+  	.spaceer {
+  		display: none;
+  	}
+
+  	.wrapper {
+    	display: grid;
+    	grid-template-columns: 1fr 1fr 1fr;
+    	background: #CFD6DE;
+	}
+
+	.side-top, .side-middle, .side-bottom {
+		display: none; 
+	}
+
+}

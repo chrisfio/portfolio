@@ -1,0 +1,251 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:300,400" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107979778-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-107979778-2');
+	</script>
+	<script type="text/javascript">
+		if (screen.width >= 700){
+			document.location = "index.html";
+		}
+	</script>
+	
+	<title>Chris Fiorino - Portfolio</title>
+	<meta name="description" content="HTML Grid Layout">
+	<meta name="author" content="Chris Fiorino">
+	<link rel="stylesheet" href="css/mobile.css">
+</head>
+
+
+<body class="page-top">
+	<nav class="mobile-menu-section">
+		<div class="mobile-menu-container">
+			<a class="navbar-initials" href="#aboutme">CF</a>
+			<div class="navbar-toggle-button">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</div>
+			<nav class="mobile-navbar">
+				<ul class="navbar-ul">
+					<li class="navbar-li-item">
+						<a class="navbar-link" href="#aboutme">Home</a>
+					</li>
+					<li class="navbar-li-item">
+						<a class="navbar-link" href="#projects">Projects</a>
+					</li>
+					<li class="navbar-li-item">
+						<a class="navbar-link" href="#contactme">Contact Me</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</nav>
+	<div class="wrapper">
+		<div class="intro-aboutme" id="aboutme">
+			<div class="profile-container">
+				<img class="profile-pic" src="images/profile.jpg">
+				<span class="about-name">Chris Fiorino</span>
+				<hr class="about-line"></hr>
+				<span class="about-title">Software Engineer</span>
+			</div>
+			<div class="about-body">
+				<a href="#projects"">
+					<span class="about-projects-title">View my projects below</div>
+					<i class="fa fa-chevron-down" aria-hidden="true"></i>
+				</a>
+			</div>
+		</div>
+		<div class="projects" id="projects">
+			<div class="project-card card-one">
+				<div class="project-card-top">
+					<div class="project-title">
+						<p class="title-header">Bartender At Home</p>
+					</div>
+					<div class="project-top-circle bartender-app-icon"></div>
+				</div>
+				<div class="project-card-bottom">
+					<div class="project-description">
+						<p>Created to demonstrate my ability to build a full stack application, this is a Flask based CRUD web app hosted on an AWS Ubuntu machine using Apache with PostgreSQL. Layout built using CSS grid, login with OAuth2.0, and secured by Let's Encrypt.</p>
+					</div>
+					<div class="project-skills skills-row-one">
+						<p class="skill-box">Flask</p>
+						<p class="skill-box">PostgreSQL</p>
+						<p class="skill-box">Apache</p>
+						<p class="skill-box">OAuth2.0</p>
+					</div>
+					<div class="project-skills skills-row-two">
+						<p class="skill-box">JSON</p>
+						<p class="skill-box">Python</p>
+						<p class="skill-box">AWS</p>
+						<p class="skill-box">CSS Grid</p>
+					</div>
+					<div class="project-links-bottom">
+						<a class="git-link" target="_blank" href="https://github.com/chrisfio/flask-crud-vagrantvm"><i class="fa fa-github" aria-hidden="true"></i><i class="fa fa-git" aria-hidden="true"></i></a>
+						<a class="project-link" target="_blank" href="http://bartenderapp.chrisfiorino.com"><p class="project-link-button">Project Page</p></a>
+					</div>
+				</div>
+			</div>
+			<div class="project-card card-two">
+				<div class="project-card-top">
+					<div class="project-title">
+						<p class="title-header">iOS/Android App</p>
+					</div>
+					<div class="project-top-circle phone-app-icon"></div>
+				</div>
+				<div class="project-card-bottom">
+					<div class="project-description">
+						<p>Built iOS and Android apps for RecordFixer.com through AnalytixBar. The application was built with JavaScript in Appcelerator Titanium Studio. The backend is hosted on an AWS EC2 Ubuntu server utilizing Django and MySQL.</p>
+					</div>
+					<div class="project-skills skills-row-one">
+						<p class="skill-box">Django</p>
+						<p class="skill-box">JavaScript</p>
+						<p class="skill-box">MySQL</p>
+					</div>
+					<div class="project-skills skills-row-two">
+						<p class="skill-box">JSON</p>
+						<p class="skill-box">Python</p>
+						<p class="skill-box">AWS</p>
+						<p class="skill-box">EC2</p>
+					</div>
+					<div class="project-links-bottom">
+						<a class="git-link" target="_blank" href="https://github.com/chrisfio/flask-crud-vagrantvm"><i class="fa fa-github" aria-hidden="true"></i><i class="fa fa-git" aria-hidden="true"></i></a>
+						<a class="project-link" target="_blank" href="http://bartenderapp.chrisfiorino.com"><p class="project-link-button">Project Page</p></a>
+					</div>
+				</div>
+			</div>
+			<div class="project-card card-three">
+				<div class="project-card-top">
+					<div class="project-title">
+						<p class="title-header">Verbal Unit Converter</p>
+					</div>
+					<div class="project-top-circle verbalize-icon"></div>
+				</div>
+				<div class="project-card-bottom">
+					<div class="project-description">
+						<p>Built to allow users to convert a unit of measurement into relative and easy to understand terms. Written in JavaScript and using JSON to determine a base unit of measurement and relative base factor for every available unit of measurement.</p>
+					</div>
+					<div class="project-skills skills-row-one">
+						<p class="skill-box">JavaScript</p>
+						<p class="skill-box">JSON</p>
+						<p class="skill-box">Git</p>
+					</div>
+					<div class="project-skills skills-row-two">
+						<p class="skill-box">HTML</p>
+						<p class="skill-box">CSS</p>
+						<p class="skill-box">BitBucket</p>
+					</div>
+					<div class="project-links-bottom">
+						<a class="git-link" target="_blank" href="https://analytixbar.com/scripts/verbalizeLogic.js"><i class="fa fa-code" aria-hidden="true"></i></a>
+						<a class="project-link" target="_blank" href="https://analytixbar.com/verbalize.html"><p class="project-link-button">Project Page</p></a>
+					</div>
+				</div>
+			</div>
+			<div class="project-card card-four">
+				<div class="project-card-top">
+					<div class="project-title">
+						<p class="title-header">SQL Logs Analysis</p>
+					</div>
+					<div class="project-top-circle database-icon"></div>
+				</div>
+				<div class="project-card-bottom">
+					<div class="project-description">
+						<p>Program written in Python, is designed to analyse data from the newsdata.sql file provided by Udacity. Program is run with a Vagrant - Virtual Machine to pull relevant data using PostgreSQL. README provides user instructions.</p>
+					</div>
+					<div class="project-skills skills-row-one">
+						<p class="skill-box">PostgreSQL</p>
+						<p class="skill-box">Vagrant</p>
+						<p class="skill-box">SQL</p>
+					</div>
+					<div class="project-skills skills-row-two">
+						<p class="skill-box">Python</p>
+						<p class="skill-box">Virtual Machine</p>
+						<p class="skill-box">README</p>
+					</div>
+					<div class="project-links-bottom">
+						<a class="git-link" target="_blank" href="https://github.com/chrisfio/sql-project"><i class="fa fa-github" aria-hidden="true"></i><i class="fa fa-git" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="project-card card-five">
+				<div class="project-card-top">
+					<div class="project-title">
+						<p class="title-header">Sciforma CSS Styling</p>
+					</div>
+					<div class="project-top-circle css-icon"></div>
+				</div>
+				<div class="project-card-bottom">
+					<div class="project-description">
+						<p>Applied CSS styling to several pages for Sciforma.com's site redesign. Responsive styling was applied based on professional mockups and is now live on Sciforma.com. Layouts styled for mobile, tablet and desktop browsers.</p>
+					</div>
+					<div class="project-skills skills-row-one">
+						<p class="skill-box">CSS</p>
+						<p class="skill-box">Responsive</p>
+						<p class="skill-box">Git</p>
+					</div>
+					<div class="project-skills skills-row-two">
+						<p class="skill-box">BitBucket</p>
+						<p class="skill-box">Sublime</p>
+					</div>
+					<div class="project-links-bottom">
+						<a class="project-link-left" target="_blank" href="https://www.sciforma.com/about"><p class="project-link-button">About Us</p></a>
+						<a class="project-link" target="_blank" href="https://www.sciforma.com/customers/ppm-success-stories"><p class="project-link-button">Customers</p></a>
+					</div>
+				</div>
+			</div>
+			<div class="project-card card-six">
+				<div class="project-card-top">
+					<div class="project-title">
+						<p class="title-header">Personal Website</p>
+					</div>
+					<div class="project-top-circle website-icon"></div>
+				</div>
+				<div class="project-card-bottom">
+					<div class="project-description">
+						<p>Built to host my resume and timeline of experience in a creative format. This was also fun practice in building a website from scratch and hosting via AWS. Google Anlytics was added to track page views. Responsive design and styling.</p>
+					</div>
+					<div class="project-skills skills-row-one">
+						<p class="skill-box">JQuery</p>
+						<p class="skill-box">Google Analytics</p>
+						<p class="skill-box">SSL</p>
+					</div>
+					<div class="project-skills skills-row-two">
+						<p class="skill-box">AWS</p>
+						<p class="skill-box">JavaScript</p>
+						<p class="skill-box">Responsive</p>
+						<p class="skill-box">CSS</p>
+					</div>
+					<div class="project-links-bottom">
+						<a class="git-link" target="_blank" href="https://github.com/chrisfio/personalsite"><i class="fa fa-github" aria-hidden="true"></i><i class="fa fa-git" aria-hidden="true"></i></a>
+						<a class="project-link" target="_blank" href="http://chrisfiorino.com/"><p class="project-link-button">Project Page</p></a>
+					</div>
+				</div>
+			</div> 
+			<div class="outro-contactme" id="contactme">
+				<div class="contact-container">
+					<span class="contact-title">Contact Me</span>
+					<hr class="contact-line"></hr>
+				</div>
+				<div class="contact-body">
+					<p>443-904-2141</p>
+					<p>chris.fiorino@gmail.com</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+	<script type="text/javascript" src="js/portfolio.js"></script>
+</body>
+</html>
